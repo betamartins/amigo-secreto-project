@@ -14,3 +14,31 @@ _PS:Estas váriaveis de ambiente podem ser inseridas em tempo de execução do p
     MAIL_USER = E-mail que será utilizado para envio.
     MAIL_PASSWORD = Senha do e-mail utilizado para o envio.
 
+## Utilizando a API
+End-point para sorteio: **POST** **/api/amigo-secreto**  
+### Body
+```
+{
+    "title": "Amigo secreto da familia",
+    "data": "2023-12-24T20:00",
+    "endereco": {
+        "logradouro": "rua",
+        "bairro": "bairro",
+        "cep": "12345678",
+        "cidade": "cidade",
+        "uf": "UF",
+        "numero": "1"
+    },
+    "listaParticipantes": [
+        {
+            "nome": "Participante 1",
+            "email": "participante1@email.com"
+        },
+        {
+            "nome": "Participante 2",
+            "email": "participante2@email.com"
+        }
+    ]
+}
+```
+    
